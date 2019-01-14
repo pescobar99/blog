@@ -5,13 +5,13 @@ namespace BlogBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class BlogController extends Controller
+class AdminController extends Controller
 {
     /**
-     * @Route("/", name="blog_index")
+     * @Route("/admin", name="admin")
      */
     public function indexAction()
     {
-        return $this->render('@Blog/Blog/index.html.twig');
+        return $this->render('@Blog/Admin/index.html.twig');
     }
 }
